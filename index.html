@@ -42,7 +42,8 @@
 			<div class="slides">
 				<section>
 					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h3>\\(y\_i= \sum\_{j=0}^N w\_{ij} x\_{j}\\)
+						The HTML Presentation Framework</h3>
 					<p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
 					</p>
@@ -403,6 +404,11 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+				// LaTeX
+					  math: {
+					  mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					  config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					  },
 			});
 
 		</script>
