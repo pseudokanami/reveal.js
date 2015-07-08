@@ -396,6 +396,7 @@ Reveal.addEventListener( 'customevent', function() {
 
 				// Optional reveal.js plugins
 				dependencies: [
+					{ src: 'plugin/math/math.js', async: true }
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -403,11 +404,12 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
-				// LaTeX
-					  math: {
-					  mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
-					  config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
-					  },
+					math: {
+        					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+				
 			});
 
 		</script>
